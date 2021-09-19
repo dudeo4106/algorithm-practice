@@ -7,7 +7,7 @@ This is a project for practicing algorithm.
 # Index
 |Question Name|
 |------|
-|[marathon contestant](./hash/marathon-contestant)|
+|[marathon contestant](./src/main/java/hash/marathonContestant)|
 
 # References
 - Question URL: `https://programmers.co.kr/`
