@@ -10,7 +10,7 @@ This is a project for practicing algorithm.
 |[marathon contestant](./src/main/java/hash/marathonContestant)|hash|
 |[phone number list](./src/main/java/hash/phoneNumberList)|hash|
 |[disguise](./src/main/java/hash/disguise)|hash|
-|[function development](./src/main/java/stack/queue/functionDevelopment)|stack and queue|
+|[function development](./src/main/java/stack/queue/functionDevelopment)|stack / queue|
 
 # References
 - Question URL: `https://programmers.co.kr/`
