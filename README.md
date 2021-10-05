@@ -5,11 +5,12 @@ This is a project for practicing algorithm.
 - Programming Language: `Java`
 
 # Index
-|Question Name|
-|------|
-|[marathon contestant](./src/main/java/hash/marathonContestant)|
-|[phone number list](./src/main/java/hash/phoneNumberList)|
-|[disguise](./src/main/java/hash/disguise)|
+|Question Name|category|
+|------|------|
+|[marathon contestant](./src/main/java/hash/marathonContestant)|hash|
+|[phone number list](./src/main/java/hash/phoneNumberList)|hash|
+|[disguise](./src/main/java/hash/disguise)|hash|
+|[function development](./src/main/java/stack/queue/functionDevelopment)|stack and queue|
 
 # References
 - Question URL: `https://programmers.co.kr/`
