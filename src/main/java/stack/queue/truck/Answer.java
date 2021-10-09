@@ -26,24 +26,46 @@ public class Answer {
         int weight3 = 100;
         int[] truck_weights3 = {10,10,10,10,10,10,10,10,10,10};
 
-        int result = solution(bridge_length2, weight2, truck_weights2);
+        int result = solution(bridge_length1, weight1, truck_weights1);
         System.out.println("result ----> " + result);
         System.exit(0);
     }
 
     public static int solution(int bridge_length, int weight, int[] truck_weights) {
+
+        Queue<Truck> totalQ = new LinkedList<>();
+        Queue<Truck> bridgeQ = new LinkedList<>();
+        for(int truck_weight : truck_weights) totalQ.offer(new Truck(truck_weight, 1)); // init totalQ
+
         int answer = 0;
+        int curWeight = 0;
 
-        Queue<Truck> queue = new LinkedList<>();
-        for(int truck_weight : truck_weights) queue.add(new Truck(truck_weight, bridge_length)); // init queue
+        while (!totalQ.isEmpty() || !bridgeQ.isEmpty()) {
+            answer++;
 
-        /*
-        while(!queue.isEmpty()) {
+            if (bridgeQ.isEmpty()) {
+                Truck t = totalQ.poll();
+                curWeight += t.weight;
+                bridgeQ.offer(t);
+                continue;
+            }
 
+            for (Truck t : bridgeQ) {
+                t.crossing += 1;
+            }
+
+            if (bridgeQ.peek().crossing > bridge_length) {
+                Truck t = bridgeQ.poll();
+                curWeight -= t.weight;
+            }
+
+            if (!totalQ.isEmpty() && curWeight + totalQ.peek().weight <= weight) {
+                Truck t = totalQ.poll();
+                curWeight += t.weight;
+                bridgeQ.offer(t);
+            }
         }
-         */
 
-        answer++;
         return answer;
     }
 }
