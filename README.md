@@ -13,6 +13,7 @@ This is a project for practicing algorithm.
 |[function development](./src/main/java/stack/queue/functionDevelopment)|stack / queue|
 |[printer](./src/main/java/stack/queue/printer)|stack / queue|
 |[A truck passing through the bridge](./src/main/java/stack/queue/truck)|stack / queue|
+|[Stock price](./src/main/java/stack/queue/stockPrice)|stack / queue|
 
 # References
 - Question URL: `https://programmers.co.kr/`
