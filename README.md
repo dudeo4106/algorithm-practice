@@ -16,6 +16,7 @@ This is a project for practicing algorithm.
 |[Stock price](./src/main/java/stack/queue/stockPrice)|stack / queue|
 |[Kth number](./src/main/java/sort/kthNumber)|sort|
 |[Max number](./src/main/java/sort/maxNumber)|sort|
+|[H Index](./src/main/java/sort/hIndex)|sort|
 
 # References
 - Question URL: `https://programmers.co.kr/`
