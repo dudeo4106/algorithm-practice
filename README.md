@@ -17,6 +17,7 @@ This is a project for practicing algorithm.
 |[Kth number](./src/main/java/sort/kthNumber)|sort|
 |[Max number](./src/main/java/sort/maxNumber)|sort|
 |[H Index](./src/main/java/sort/hIndex)|sort|
+|[Mock Test](./src/main/java/bruteForce/mockTest)|brute force|
 
 # References
 - Question URL: `https://programmers.co.kr/`
