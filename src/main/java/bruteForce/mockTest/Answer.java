@@ -15,23 +15,23 @@ public class Answer {
     }
 
     public static int[] solution(int[] answers) {
-        int[] a = {1, 2, 3, 4, 5};
-        int[] b = {2, 1, 2, 3, 2, 4, 2, 5};
-        int[] c = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+        int[] studentA = {1, 2, 3, 4, 5};
+        int[] studentB = {2, 1, 2, 3, 2, 4, 2, 5};
+        int[] studentC = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
         int[] score = new int[3];
 
         for(int i=0; i<answers.length; i++) {
-            if(answers[i] == a[i%a.length]) score[0]++;
-            if(answers[i] == b[i%b.length]) score[1]++;
-            if(answers[i] == c[i%c.length]) score[2]++;
+            if(answers[i] == studentA[i % studentA.length]) score[0]++;
+            if(answers[i] == studentB[i % studentB.length]) score[1]++;
+            if(answers[i] == studentC[i % studentC.length]) score[2]++;
         }
 
         int maxScore = Math.max(score[0], Math.max(score[1], score[2]));
-        ArrayList<Integer> list = new ArrayList<>();
-        if(maxScore == score[0]) list.add(1);
-        if(maxScore == score[1]) list.add(2);
-        if(maxScore == score[2]) list.add(3);
+        ArrayList<Integer> resultList = new ArrayList<>();
+        if(maxScore == score[0]) resultList.add(1);
+        if(maxScore == score[1]) resultList.add(2);
+        if(maxScore == score[2]) resultList.add(3);
 
-        return list.stream().mapToInt(i-> i).toArray();
+        return resultList.stream().mapToInt(i-> i).toArray();
     }
 }
