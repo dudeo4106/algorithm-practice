@@ -18,6 +18,7 @@ This is a project for practicing algorithm.
 |[Max number](./src/main/java/sort/maxNumber)|sort|
 |[H Index](./src/main/java/sort/hIndex)|sort|
 |[Mock Test](./src/main/java/bruteForce/mockTest)|brute force|
+|[Find prime number](./src/main/java/bruteForce/findPrimeNumber)|brute force|
 
 # References
 - Question URL: `https://programmers.co.kr/`
