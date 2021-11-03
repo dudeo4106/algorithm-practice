@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Answer {
     public static void main(String[] args) {
-        String numbers = "011";
+        String numbers = "333";
 
         int res = solution(numbers);
 
@@ -38,10 +38,19 @@ public class Answer {
         }
     }
 
-    public static boolean isPrime(int n){
-        if(n==0 || n==1) return false;
-        for(int i=2; i<=(int)Math.sqrt(n); i+=i){
-            if(n%i == 0) return false;
+    public static boolean isPrime(int num){
+        if(num <= 1) {
+            return false;
+        }
+        if(num == 2 || num == 3) {
+            return true;
+        }
+
+        int end = (int) Math.sqrt(num);
+        for(int i = 2; i <= end; i++) {
+            if(num % i == 0) {
+                return false;
+            }
         }
         return true;
     }
