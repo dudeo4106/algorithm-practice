@@ -19,6 +19,7 @@ This is a project for practicing algorithm.
 |[H Index](./src/main/java/sort/hIndex)|sort|
 |[Mock Test](./src/main/java/bruteForce/mockTest)|brute force|
 |[Find prime number](./src/main/java/bruteForce/findPrimeNumber)|brute force|
+|[Carpet](./src/main/java/bruteForce/carpet)|brute force|
 
 # References
 - Question URL: `https://programmers.co.kr/`
